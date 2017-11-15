@@ -1,0 +1,56 @@
+# Blender MTL File: 'Warehouse-1.blend'
+# Material Count: 5
+
+newmtl CeilingMat
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.300000 0.300000 0.300000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/gilberto/Blender/Experiencia_i/Textures/TexturesCom_RoofingPlates0023_1_seamless_S.jpg
+
+newmtl FloorMat
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/gilberto/Blender/Experiencia_i/Textures/TexturesCom_ConcreteFloors0081_1_seamless_S.jpg
+
+newmtl ProductsMat
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/gilberto/Blender/Experiencia_i/Textures/IMG_0092-1024x682.jpg
+
+newmtl ShelfMat
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.181266 0.181266 0.181266
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl WallsMat
+Ns 17.647059
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/gilberto/Blender/Experiencia_i/Textures/TexturesCom_ConcreteBare0350_1_seamless_S.jpg
