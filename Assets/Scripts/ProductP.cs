@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class ProductP : MonoBehaviour {
+public class ProductP : MonoBehaviour{
     public Text status;
  
     // Use this for initialization
