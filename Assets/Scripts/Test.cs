@@ -7,8 +7,8 @@ using UnityEngine.UI;
 
 public class Test : getBeacons {
 
-    public Material[] material;
-    //public GameObject[] adj;
+    //public List<Material> materials;
+    public Material mOut, mIn;
     Renderer rend;
 
     public Text text;
@@ -21,15 +21,20 @@ public class Test : getBeacons {
     {
         rend = GetComponent<Renderer>();
         rend.enabled = true;
-        rend.sharedMaterial = material[0];
+        
         first = true;
+        mOut = (Material)Resources.Load("Out", typeof(Material));
+        mIn = (Material)Resources.Load("In", typeof(Material));
+        /*materials.Add(mOut);
+        materials.Add(mIn);*/
+        rend.sharedMaterial = mOut;
 
         //actualZone.name = "-1";
     }
 
     private void OnTriggerExit(Collider other)
     {
-        rend.sharedMaterial = material[0];
+        rend.sharedMaterial = mOut;
         prevZone = this.gameObject;
     }
 
@@ -41,16 +46,16 @@ public class Test : getBeacons {
         {
             for (int j = 0; j < beacons.Count; j++)
             {
-                if (beacons[j].section_id == actualZone.name)
+                if (beacons[j].beacon_id == actualZone.name)
                 {
                     if (beacons[j].adjacency.Contains(prevZone.name))
                     {
-                        rend.sharedMaterial = material[1];
+                        rend.sharedMaterial = mIn;
                         text.text = "Current zone: " + actualZone.name;
                     }
                     else
                     {
-                        rend.sharedMaterial = material[0];
+                        rend.sharedMaterial = mOut;
                         text.text = "Current zone: not adj";
                     }
                     break;
@@ -59,7 +64,7 @@ public class Test : getBeacons {
         }
         else
         {
-            rend.sharedMaterial = material[1];
+            rend.sharedMaterial = mIn;
             text.text = "Current zone: " + actualZone.name;
             first = false;
         }
